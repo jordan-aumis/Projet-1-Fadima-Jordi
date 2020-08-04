@@ -3,10 +3,15 @@ margin: 0px;
 box-sizing: border-box;
 }
 
+h1{
+    color: gold;
+    text-align: center;
+}
+
 main{
     width: 100%;
     height: auto;
-    background-color: grey;
+    background-color: #8d8f8e;
     display: flex;
     justify-content: space-around;
     
@@ -36,7 +41,52 @@ figcaption{
     text-justify: center;
 }
 
-#image{
-    background-image: url(../chef-de-mission-humanitaire-Copier.jpg);
-    height: 200px;
+@media screen and (min-width:320px) and (max-width: 480px){
+h1{
+    color: black;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: #f3ca20;
+}
+main{
+    width: 80%;
+    height: auto;
+    background-color: #8d8f8e;
+    display: block;
+    margin: auto;
+    
+}
+
+section{
+    border: #f3ca20 solid 1px;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+article{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+    border: #f3ca20 solid 1px;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+figcaption{
+    align-items: center;
+    align-content: center;
+    color: gold;
+    justify-content: center;
+    text-justify: center;
+}
 }
