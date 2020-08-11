@@ -1,33 +1,77 @@
 *{padding: 0px;
 margin: 0px;
 box-sizing: border-box;
+font-family: garamond;
 }
 
 /* smartphone */
 
-    h1{
-        color: #181818;
-        text-align: center;
+    #logo {
+    height: 60px;
+    width: 60px;
+    } 
+
+    header {
+        background-color: #2c2c2c;
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-    
+
+    nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    nav ul {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        list-style: none;
+    }
+
+    a{
+        color: #f3ca20;
+    }
+
+    h1 {
+        color: #f3ca20;
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        margin-top: 100px;
+    }
+
     h2{
         text-align: center;
         color: #f3ca20;
+        text-shadow: 3px 3px 3px black; 
+        margin-bottom: 20px;
+        font-size: 20px;
     }
     main{
-        width: 80%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 100%;
         height: auto;
         background-color: #fefee2;
-        display: block;
-        margin: auto;
         
     }
     
     section{
-        border: #f3ca20 solid 1px;
-        width: 100%;
+        border:black solid 1px;
+        width: 80%;
         margin-bottom: 100px;
         margin-top: 50px;
+        padding-left: 5px;
+        padding-bottom: 5px;
     }
     
     article{
@@ -40,7 +84,7 @@ box-sizing: border-box;
     }
     .button {
         position: relative;
-        top: -33px;
+        top: 33px;
         z-index: 3;
         display: flex;
         align-items: center;
@@ -51,18 +95,23 @@ box-sizing: border-box;
         background-color: #f3ca20;
         
     }
+
+    button p {
+    font-size: 12px;
+    }
     
     #button1 {
         height: 30px;
         width: 70px;
         border-radius: 30px;
-        font-size: 15px !important;
+        font-size: 10px !important;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
         box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2)
     }
+    
     
     #button2 {
         height: 100px;
@@ -76,11 +125,18 @@ box-sizing: border-box;
         margin-bottom: 100px;
          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2)
     }
-    
+
+  footer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #2c2c2c;
+}
+
 /* ordi */
 @media screen and (min-width:1025px) and (max-width : 1480px){
 header {
-        background-color: #0c0c0c;
+        background-color: #2c2c2c;
         height: 150px;
         width: 100%;
         display: flex;
@@ -89,8 +145,8 @@ header {
     }
 
 #logo {
-    height: 80px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
 } 
 
 nav {
@@ -103,7 +159,7 @@ nav {
 nav ul {
     margin-top: 5px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     list-style: none;
 }
@@ -112,7 +168,7 @@ footer {
     display: flex;
     width: 100%;
     height: 50px;
-    background-color: #181818;
+    background-color: #2c2c2c;
 }
 
 
@@ -123,8 +179,6 @@ main{
     width: 100%;
     height: auto;
     background-color: #fefee2;
-    display: flex;
-    justify-content: space-around;
     padding-bottom: 100px;
 }
 
@@ -134,6 +188,7 @@ section{
     height: 400px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     margin-top:50px;
+
 }
 
 article{
@@ -163,7 +218,7 @@ h2{
 
     .button {
         position: relative;
-        top: 0px;
+        top: 22px;
         z-index: 3;
         display: flex;
         align-items: center;
@@ -174,15 +229,14 @@ h2{
         background-color: #f3ca20;
     }
 
-    #button2 {
-        height: 200px;
-        width: 600px;
-        border-radius: 300px;
-        -webkit-border-radius: 300px;
-        -moz-border-radius: 300px;
-        -ms-border-radius: 300px;
-        -o-border-radius: 300px;
-        box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2)
+    button p {
+    font-size: 24px;
+    }
+
+    .button:hover {
+        background-color: #2c2c2c;
+        color: #f3ca20;
+        cursor: pointer;
     }
 
     #button1 {
@@ -196,6 +250,15 @@ h2{
         -o-border-radius: 30px;
         box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2)
     }
+    #button1:hover {
+        height: 70px;
+        width: 150px;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+    }
 
     #button2 p {
          font-size: 100px !important;
@@ -206,12 +269,14 @@ h2{
         font-size: 24px;
     }
 
-    a:hover{
+    footer li a:hover{
         color: #f3ca20;
-        /* background-color: black; */
         text-shadow: 5px 5px 5px black; 
-        height: 20px;
+        height: 50px;
         width: auto;
         font-size: 20px;
+        text-align: center;
+        font-size: 30px;
         }
-}
+        
+    }
