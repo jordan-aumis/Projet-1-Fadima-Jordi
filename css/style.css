@@ -297,7 +297,7 @@ footer {
          font-size: 24px !important;
     }
 
-    footer li a:hover{
+    li a:hover{
         color: #f3ca20;
         text-shadow: 5px 5px 5px black; 
         height: 50px;
@@ -321,6 +321,7 @@ footer {
         width: 40%;
         font-size: 3em;
         font-weight: bold;
+        text-shadow: 5px 5px 5px black; 
     }
 
     h2{
